@@ -304,10 +304,6 @@ footer > menu {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.footer-header {
-  margin-bottom: -1.25rem;
-}
-
 .footer-links {
   padding: 0;
   list-style: none;

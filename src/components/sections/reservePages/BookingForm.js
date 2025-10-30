@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export default function ReservationForm(props) {
-  const [fName, setFName] = useState("");
-  const [lName, setLName] = useState("");
+  const [firstName, setfirstName] = useState("");
+  const [lName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [tel, setTel] = useState("");
   const [people, setPeople] = useState(1);
@@ -29,16 +29,16 @@ export default function ReservationForm(props) {
   return (
     <form className="reservation-form">
       <div>
-        <label htmlFor="fName">First Name</label> <br></br>
+        <label htmlFor="firstName">First Name</label> <br></br>
         <input
           type="text"
-          id="fName"
+          id="firstName"
           placeholder="First Name"
           required
           minLength={2}
           maxLength={50}
-          value={fName}
-          onChange={(e) => setFName(e.target.value)}
+          value={firstName}
+          onChange={(e) => setfirstName(e.target.value)}
         ></input>
       </div>
 
@@ -51,7 +51,7 @@ export default function ReservationForm(props) {
           minLength={2}
           maxLength={50}
           value={lName}
-          onChange={(e) => setLName(e.target.value)}
+          onChange={(e) => setLastName(e.target.value)}
         ></input>
       </div>
 
